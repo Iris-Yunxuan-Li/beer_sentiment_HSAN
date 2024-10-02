@@ -1,10 +1,14 @@
-# Beer Review Classification with Hierarchical Self-Attention Networks
+# Beer Review Sentiment Classification with Hierarchical Self-Attention Networks (HSAN)
 
-This project explores the use of Hierarchical Self-Attention Networks (HSAN) for classifying beer reviews based on their sentiment. The model integrates self-attention mechanisms and convolutional layers to analyze and predict the sentiment of reviews, classifying them into positive or negative categories.
+## Overview
 
-The project includes a Jupyter notebook that covers data preprocessing, model definition, training, and evaluation. The notebook leverages pre-trained word embeddings and a hierarchical approach to capture the complex relationships within text data.
+This project aims to classify beer reviews based on sentiment using a Hierarchical Self-Attention Network (HSAN). The model incorporates pre-trained word embeddings and employs a hierarchical structure to analyze the sentiment at both the review and sentence levels.
 
-## Features
- - Data Loading & Preprocessing: Load and preprocess beer review data, including tokenization and encoding.
- - Hierarchical Self-Attention Model: Definition of a model combining self-attention and convolutional layers for sentiment classification.
- - Training & Evaluation: Training of the model with detailed metrics and evaluation on validation and test sets.
+## Benchmarking with Convolutional Layer
+To evaluate the performance of the HSAN model, a convolutional layer was added as a benchmark. The goal was to compare the results of the HSAN against a traditional convolutional approach.
+
+### Results
+Both models performed similarly in sentiment classification, indicating that either could be effective depending on the context. However, the performance might be influenced by the non-optimal configurations used for both models, suggesting that further tuning could yield better results.
+
+
+
